@@ -1,0 +1,40 @@
+fileFormatVersion: 2
+guid: a2799e66871eae646a159309ae44c575
+importerOverride: ZEPETO.Script.Compiler:ZEPETO.Script:TypescriptAssetImporter
+ScriptedImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 2
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: -1123457745, guid: 54cf806323ffe4418a4ce4cc63fe6b9d, type: 3}
+  isAssemblyDeclarations: 0
+  assembly: 
+  generateAllTypes: 1
+  types: []
+  generateWrapper: 0
+  overrideWrapperTypes: 0
+  wrapperTypes: []
+  WrapperFilters: []
+  wrapperOutputDirectory: Generated
+  compiledResult: "{\"source\":\"\\\"use strict\\\";\\r\\nObject.defineProperty(exports,
+    \\\"__esModule\\\", { value: true });\\r\\nconst ZEPETO_Script_1 = require(\\\"ZEPETO.Script\\\");\\r\\nclass
+    GamePlayUIManager extends ZEPETO_Script_1.ZepetoScriptBehaviour {\\r\\n    Awake()
+    {\\r\\n    }\\r\\n    Start() {\\r\\n        this.InitButtonsListeners();\\r\\n       
+    this.popupUI.SetActive(false);\\r\\n    }\\r\\n    InitButtonsListeners() {\\r\\n       
+    this.xButton.onClick.AddListener(() => {\\r\\n            this.popupUI.SetActive(true);\\r\\n           
+    // \uAC8C\uC784 \uC911\uB2E8\\r\\n        });\\r\\n        this.yButton.onClick.AddListener(()
+    => {\\r\\n            this.popupUI.SetActive(false);\\r\\n            this.gamePlayPanel.SetActive(false);\\r\\n           
+    // \uAC8C\uC784 \uC885\uB8CC\\r\\n        });\\r\\n        this.nButton.onClick.AddListener(()
+    => {\\r\\n            this.popupUI.SetActive(false);\\r\\n            // \uAC8C\uC784
+    \uC7AC\uAC1C\\r\\n        });\\r\\n    }\\r\\n    LockColorButtons() {\\r\\n       
+    for (let i = 0; i < this.colorButtons.Length; i++) {\\r\\n            this.colorButtons[i].interactable
+    = false;\\r\\n        }\\r\\n    }\\r\\n    UnlockColorButtons() {\\r\\n       
+    for (let i = 0; i < this.colorButtons.Length; i++) {\\r\\n            this.colorButtons[i].interactable
+    = true;\\r\\n        }\\r\\n    }\\r\\n    ShowGameUI() {\\r\\n        this.gamePlayPanel.SetActive(true);\\r\\n   
+    }\\r\\n    HideGameUI() {\\r\\n        this.gamePlayPanel.SetActive(false);\\r\\n   
+    }\\r\\n}\\r\\nexports.default = GamePlayUIManager;\\r\\n//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiR2FtZVBsYXlVSU1hbmFnZXIuanMiLCJzb3VyY2VSb290IjoiIiwic291cmNlcyI6WyJHYW1lUGxheVVJTWFuYWdlci50cyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiOztBQUdBLGlEQUFxRDtBQUVyRCxNQUFxQixpQkFBa0IsU0FBUSxxQ0FBcUI7SUFXaEUsS0FBSztJQUVMLENBQUM7SUFFRCxLQUFLO1FBQ0QsSUFBSSxDQUFDLG9CQUFvQixFQUFFLENBQUM7UUFDNUIsSUFBSSxDQUFDLE9BQU8sQ0FBQyxTQUFTLENBQUMsS0FBSyxDQUFDLENBQUM7SUFFbEMsQ0FBQztJQUVELG9CQUFvQjtRQUNoQixJQUFJLENBQUMsT0FBTyxDQUFDLE9BQU8sQ0FBQyxXQUFXLENBQUMsR0FBRSxFQUFFO1lBQ2pDLElBQUksQ0FBQyxPQUFPLENBQUMsU0FBUyxDQUFDLElBQUksQ0FBQyxDQUFDO1lBQzdCLFFBQVE7UUFDWixDQUFDLENBQUMsQ0FBQztRQUVILElBQUksQ0FBQyxPQUFPLENBQUMsT0FBTyxDQUFDLFdBQVcsQ0FBQyxHQUFFLEVBQUU7WUFDakMsSUFBSSxDQUFDLE9BQU8sQ0FBQyxTQUFTLENBQUMsS0FBSyxDQUFDLENBQUM7WUFDOUIsSUFBSSxDQUFDLGFBQWEsQ0FBQyxTQUFTLENBQUMsS0FBSyxDQUFDLENBQUM7WUFDcEMsUUFBUTtRQUNaLENBQUMsQ0FBQyxDQUFBO1FBRUYsSUFBSSxDQUFDLE9BQU8sQ0FBQyxPQUFPLENBQUMsV0FBVyxDQUFDLEdBQUUsRUFBRTtZQUNqQyxJQUFJLENBQUMsT0FBTyxDQUFDLFNBQVMsQ0FBQyxLQUFLLENBQUMsQ0FBQztZQUM5QixRQUFRO1FBQ1osQ0FBQyxDQUFDLENBQUM7SUFDUCxDQUFDO0lBR00sZ0JBQWdCO1FBQ25CLEtBQUksSUFBSSxDQUFDLEdBQUMsQ0FBQyxFQUFFLENBQUMsR0FBQyxJQUFJLENBQUMsWUFBWSxDQUFDLE1BQU0sRUFBRSxDQUFDLEVBQUUsRUFBQztZQUN6QyxJQUFJLENBQUMsWUFBWSxDQUFDLENBQUMsQ0FBQyxDQUFDLFlBQVksR0FBRyxLQUFLLENBQUM7U0FDN0M7SUFDTCxDQUFDO0lBRU0sa0JBQWtCO1FBQ3JCLEtBQUksSUFBSSxDQUFDLEdBQUMsQ0FBQyxFQUFFLENBQUMsR0FBQyxJQUFJLENBQUMsWUFBWSxDQUFDLE1BQU0sRUFBRSxDQUFDLEVBQUUsRUFBQztZQUN6QyxJQUFJLENBQUMsWUFBWSxDQUFDLENBQUMsQ0FBQyxDQUFDLFlBQVksR0FBRyxJQUFJLENBQUM7U0FDNUM7SUFDTCxDQUFDO0lBRU0sVUFBVTtRQUNiLElBQUksQ0FBQyxhQUFhLENBQUMsU0FBUyxDQUFDLElBQUksQ0FBQyxDQUFDO0lBQ3ZDLENBQUM7SUFFTSxVQUFVO1FBQ2IsSUFBSSxDQUFDLGFBQWEsQ0FBQyxTQUFTLENBQUMsS0FBSyxDQUFDLENBQUM7SUFDeEMsQ0FBQztDQUVKO0FBNURELG9DQTREQyJ9\",\"assetPath\":\"Assets/02.Scripts/GamePlayUIManager.ts\",\"manifest\":{\"properties\":[{\"assembly\":\"UnityEngine.CoreModule\",\"name\":\"gamePlayPanel\",\"type\":\"UnityEngine.GameObject\",\"isArray\":false,\"initValue\":[],\"enumKeys\":[],\"enumValues\":[],\"attributes\":[{\"name\":\"SerializeField\",\"args\":[]}]},{\"assembly\":\"UnityEngine.UI\",\"name\":\"xButton\",\"type\":\"UnityEngine.UI.Button\",\"isArray\":false,\"initValue\":[],\"enumKeys\":[],\"enumValues\":[],\"attributes\":[{\"name\":\"SerializeField\",\"args\":[]}]},{\"assembly\":\"UnityEngine.UI\",\"name\":\"colorButtons\",\"type\":\"UnityEngine.UI.Button[]\",\"isArray\":true,\"initValue\":[],\"enumKeys\":[],\"enumValues\":[],\"attributes\":[{\"name\":\"SerializeField\",\"args\":[]}]},{\"assembly\":\"UnityEngine.CoreModule\",\"name\":\"popupUI\",\"type\":\"UnityEngine.GameObject\",\"isArray\":false,\"initValue\":[],\"enumKeys\":[],\"enumValues\":[],\"attributes\":[{\"name\":\"Header\",\"args\":[\"'PopUp
+    UI'\"]},{\"name\":\"SerializeField\",\"args\":[]}]},{\"assembly\":\"UnityEngine.UI\",\"name\":\"yButton\",\"type\":\"UnityEngine.UI.Button\",\"isArray\":false,\"initValue\":[],\"enumKeys\":[],\"enumValues\":[],\"attributes\":[{\"name\":\"SerializeField\",\"args\":[]}]},{\"assembly\":\"UnityEngine.UI\",\"name\":\"nButton\",\"type\":\"UnityEngine.UI.Button\",\"isArray\":false,\"initValue\":[],\"enumKeys\":[],\"enumValues\":[],\"attributes\":[{\"name\":\"SerializeField\",\"args\":[]}]}],\"name\":\"GamePlayUIManager\",\"description\":\"\",\"hasAnimatorMove\":false},\"isCompiled\":true}"
+  typescriptHash: 3a1f04094e3803da7f67f4866eb1732d
+  onlyWriteTrigger: 0
